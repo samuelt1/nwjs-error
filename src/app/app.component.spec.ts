@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'softphone'`, () => {
+  it(`should have as title 'nwjs-test'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('softphone');
+    expect(app.title).toEqual('nwjs-test');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to softphone!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to nwjs-test!');
   });
 });
